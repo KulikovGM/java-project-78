@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import hexlet.code.Validator;
-
 class StringSchemaTest {
     @Test
     void testValid() {
