@@ -12,6 +12,11 @@ public abstract class BaseSchema<T> {
         this.validations.put(key, validation);
     }
 
+
+    /**
+     * This method checks all applied validations.
+     */
+
     public boolean isValid(T obj) {
         for (Predicate<T> value : this.validations.values()) {
             if (!value.test(obj)) {
