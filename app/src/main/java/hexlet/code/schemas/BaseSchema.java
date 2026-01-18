@@ -12,9 +12,12 @@ public abstract class BaseSchema<T> {
         this.validations.put(key, validation);
     }
 
-
     /**
-     * This method checks all applied validations.
+     * Проверяет, соответствует ли переданный объект всем критериям валидации.
+     *
+     * @param obj объект для проверки валидации
+     * @return {@code true} если объект проходит все проверки,
+     * {@code false} если хотя бы одна проверка не пройдена
      */
 
     public boolean isValid(T obj) {
@@ -24,6 +27,5 @@ public abstract class BaseSchema<T> {
             }
         }
         return true;
-    } // переписать в виде лямбды validations.values().stream().allMatch(...)
-
+    }
 }
