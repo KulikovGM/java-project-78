@@ -6,4 +6,14 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
+//rootProject.name = "app"
+
 rootProject.name = "app"
+//include("app")
+
+plugins {
+    // See https://jmfayard.github.io/refreshVersions
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+}
+
+

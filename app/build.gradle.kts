@@ -1,4 +1,3 @@
-
 plugins {
     application
     jacoco
@@ -16,10 +15,10 @@ sonar {
 }
 
 application {
-    mainClass = "org.example.App"
+    mainClass = "hexlet.code.Validator"
 }
 
-group = "org.example"
+group = "hexlet.code"
 version = "1.0-SNAPSHOT"
 
 repositories {
