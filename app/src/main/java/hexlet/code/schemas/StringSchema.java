@@ -1,6 +1,6 @@
 package hexlet.code.schemas;
 
-public class StringSchema extends BaseSchema<String> {
+public final class StringSchema extends BaseSchema<String> {
     // Пока не вызван метод required(), null и пустая строка считаются валидным
 
     public StringSchema required() {

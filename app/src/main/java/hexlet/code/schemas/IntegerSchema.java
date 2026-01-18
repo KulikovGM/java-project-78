@@ -2,7 +2,7 @@ package hexlet.code.schemas;
 
 import java.util.Objects;
 
-public class IntegerSchema extends BaseSchema<Integer> {
+public final class IntegerSchema extends BaseSchema<Integer> {
 
     public IntegerSchema required() {
         addValidation("required", Objects::nonNull);
